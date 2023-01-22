@@ -41,7 +41,8 @@ body {
 }
 
 
-.btn {
+.sec1 .btn {
+    position: relative;
     height: 70px;
     width: 200px;
     border-radius: 60px;
@@ -54,10 +55,10 @@ body {
     font-family: "Torus Notched";
     font-size: 1.15em;
     color: #31488f;
-    position: relative;
+    z-index: 2;
 }
 
-.btn::before {
+.sec1 .btn::before {
     content: "";
     position: absolute;
     background-color: #31488f;
@@ -77,26 +78,26 @@ body {
     -moz-transform: translate(-100%);
     -ms-transform: translate(-100%);
     -o-transform: translate(-100%);
-    z-index: 0;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    z-index: -1;
 }
 
-.btn:hover::before {
+.sec1 .btn:hover::before {
     transform: translate(0%);
     -webkit-transform: translate(0%);
     -moz-transform: translate(0%);
     -ms-transform: translate(0%);
     -o-transform: translate(0%);
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
 }
 
-.btn:hover {
+.sec1 .btn:hover {
     color: aliceblue;
 }
 
-.btn i {
+.sec1 .btn i {
     display: none;
 }
