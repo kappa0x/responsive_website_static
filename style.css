@@ -14,14 +14,28 @@ h1, h2, h3, h4, h5, h6, button {
 body {
     overflow-x: hidden;
     max-width: 1920px;
-    margin: 0 auto;
 }
 
 /* SECTION 1 */
 
+@media only screen and (min-width: 1440px) {
+    .sec1 {
+        height: 70vh;
+        margin-left: 120px;
+        font-size: 0.9em;
+    }
+}
+
 @media (min-width: 1500px) {
     .sec1 {
         height: 100vh;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .sec1 button {
+        margin-top: 25px;
         width: 100%;
     }
 }
@@ -56,6 +70,12 @@ body {
     font-size: 1.15em;
     color: #31488f;
     z-index: 2;
+    overflow: hidden;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .sec1 .btn::before {
@@ -96,8 +116,23 @@ body {
 
 .sec1 .btn:hover {
     color: aliceblue;
+    width: 270px;
+    background-color: #31488f;
 }
 
 .sec1 .btn i {
-    display: none;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    margin: -10px;
+    transition: 0.3s;
+}
+
+.sec1 .btn:hover i {
+    transform: scale(1);
+    display: inline-block;
+    margin-left: 30px;
+    color: aliceblue;
 }
