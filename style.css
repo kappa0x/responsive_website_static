@@ -2,17 +2,55 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: poppins;
+    font-family: "poppins";
+    text-decoration: none;
     scroll-behavior: smooth;
-
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, button {
     font-family: "Torus Notched";
 }
 
 body {
     overflow-x: hidden;
     max-width: 1920px;
-    background-color: grey;
+    margin: 0 auto;
+}
+
+/* SECTION 1 */
+
+@media (min-width: 1500px) {
+    .sec1 {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+.sec1 .container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec1 h1 {
+    color: #31488f;
+    font-size: 8em;
+}
+
+.btn {
+    height: 70px;
+    width: 200px;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border: 3px solid #31488f;
+    background-color: aliceblue;
+    font-family: "Torus Notched";
+    font-size: 1.15em;
+    color: #31488f;
 }
