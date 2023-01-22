@@ -16,13 +16,43 @@ body {
     max-width: 1920px;
 }
 
+/* HEADER */
+header {
+    height: 130px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: red;
+    position: absolute;
+}
+
+header .container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* SECTION 1 */
 
 @media only screen and (min-width: 1440px) {
     .sec1 {
-        height: 70vh;
+        height: 100vh;
         margin-left: 120px;
         font-size: 0.9em;
+        background-image: url(img/13.png);
+        background-repeat: no-repeat;
+        background-position: top right;
     }
 }
 
