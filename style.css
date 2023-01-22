@@ -40,6 +40,7 @@ body {
     font-size: 8em;
 }
 
+
 .btn {
     height: 70px;
     width: 200px;
@@ -53,4 +54,49 @@ body {
     font-family: "Torus Notched";
     font-size: 1.15em;
     color: #31488f;
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    background-color: #31488f;
+    height: 70px;
+    width: 200px;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border: 3px solid #31488f;
+    font-size: 1.15em;
+    top: -2px;
+    left: -2px;
+    transform: translate(-100%);
+    -webkit-transform: translate(-100%);
+    -moz-transform: translate(-100%);
+    -ms-transform: translate(-100%);
+    -o-transform: translate(-100%);
+    z-index: 0;
+}
+
+.btn:hover::before {
+    transform: translate(0%);
+    -webkit-transform: translate(0%);
+    -moz-transform: translate(0%);
+    -ms-transform: translate(0%);
+    -o-transform: translate(0%);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.btn:hover {
+    color: aliceblue;
+}
+
+.btn i {
+    display: none;
 }
