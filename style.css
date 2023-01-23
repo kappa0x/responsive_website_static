@@ -22,9 +22,8 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: violet;
     position: absolute;
-}   /* ok */ 
+}   /* ok */
 
 header .container {
     width: 1500px;
@@ -37,17 +36,22 @@ header .container {
 
 header .container ul  {
     display: flex;
+    justify-content: space-between;
 }
 
 header .container ul a {
     font-weight: bold;
     font-size: 1.2em;
+    font-family: "Torus Notched";
+    color: #31488f;
+    padding: 50px 70px;
 }
 
 .logo {
     height: 100%;
     width: 200px;
     display: flex;
+    padding-top: auto;
     justify-content: center;
     align-items: center;
 }
